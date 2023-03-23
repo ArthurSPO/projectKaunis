@@ -9,10 +9,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://fonts.cdnfonts.com/css/ageo-personal-use" rel="stylesheet">
-
   <script src="https://kit.fontawesome.com/0e7420386c.js" crossorigin="anonymous"></script>
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <!-- HTML5Shiv -->
@@ -137,34 +138,35 @@
         </div>
       </div>
     </footer>
-  </div>
 
-  <div class="banner fixed-bottom">
-    <div class="banner-content bg-success">
-      <div class="banner-text text-center">
-        americanas e os cookies: a gente usa cookies para personalizar anúncios e melhorar a sua experiência no site. Ao
-        continuar navegando, você concorda com a nossa Política de Privacidade.
-        Aviso de Cookies:
-        Quando você acessa este site, podem vir a ser coletados alguns dados relacionados ao seu dispositivo, bem como
-        cookies, a fim de que possamos operacionalizar os nossos sistemas e fornecer conteúdos personalizados para você.
-        Para saber mais sobre cookies acesse a nossa Política de Privacidade. Para aceitar, clique no botão "Aceitar
-        Cookies", ou, caso não aceite, marque aqui suas preferências <br>
-        <button class="btn btn-danger btn-lg close m-5" type="button">
-          <i class="bi bi-x-square-fill"> Aceito as politicas</i>
+
+    <div class="d-flex justify-content-end fixed-bottom">
+      <div id="cookiePopup" class="hide">
+        <p class="text-md-start">
+          Quando você acessa este site, podem vir a ser coletados alguns dados relacionados ao seu dispositivo, bem como
+          cookies, a fim de que possamos operacionalizar os nossos sistemas e fornecer conteúdos personalizados para
+          você.
+          Para saber mais sobre cookies acesse a nossa <a href="politica.html">Política de Privacidade</a>. Ao
+          continuar navegando, você concorda com a nossa <a href="politica.html">Política de Privacidade</a>.
+        </p>
+        <button id="acceptCookie">
+          <i class="bi bi-check-lg mr-5"></i>
+          Aceito
+
         </button>
       </div>
-
     </div>
-  </div>
-  <script>
-    document.querySelector(".close").addEventListener("click", function () {
-      this.closest(".banner").style.display = "none";
-    })
+    <!-- Script -->
+    <script type="text/javascript" src="js/script.js"></script>
 
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+
 </body>
 
 </html>
