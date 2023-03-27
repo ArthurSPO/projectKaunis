@@ -12,13 +12,7 @@
     border-radius: 6px;
     transition: all 0.5s ease-in;
   }
-  #cookiePopup img {
-    display: block;
-    width: 3.75em;
-    transform: translateZ(0);
-    position: relative;
-    margin: auto;
-  }
+
   #cookiePopup p {
     text-align: center;
     margin: 1.4em 0;

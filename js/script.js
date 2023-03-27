@@ -6,7 +6,7 @@ document.getElementById("acceptCookie").addEventListener("click", () => {
   //Increment the current time by 1 minute (cookie will expire after 1 minute)
   d.setMinutes(2 + d.getMinutes());
   //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
-  document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+  document.cookie = "kaunisCookie=cookieKaunis; expires = " + d + ";";
   //Hide the popup
   popUp.classList.add("hide");
   popUp.classList.remove("show");
@@ -32,3 +32,5 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
+
+
