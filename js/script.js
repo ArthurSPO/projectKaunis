@@ -32,5 +32,3 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
-
-
