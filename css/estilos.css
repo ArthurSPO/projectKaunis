@@ -1,8 +1,87 @@
 @import url('https://fonts.cdnfonts.com/css/ageo-personal-use');
 
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes newfadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes newfadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+.newanimated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: both
+    
+}
+
+.newanimatedFadeInUp {
+    opacity: 0
+}
+
+.newfadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
 * {
-    overflow-x: hidden;
-    font-family: 'Ageo Personal Use', sans-serif;
+    overflow-x: hidden;   
 }
 
 .capa {
@@ -10,15 +89,22 @@
     height: 100%;
     font-size: 24px;
     text-align: justify;
+    font-family: 'Ageo Personal Use', sans-serif;
 }
-
+.contato{
+    background-color: white;
+    height: 100%;
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Ageo Personal Use', sans-serif;
+}
 .cornav {
     background-color: #DCD1C4;
 }
 
 .fundo {
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 950px;
@@ -37,7 +123,7 @@
 }
 
 #imgfundo3 {
-    background-image: url(../img/bfundo.jpg);
+    background-image: url(../img/cfundo.jpg);
 }
 
 #navbarSupportedContent {
@@ -128,9 +214,13 @@ footer a:hover {
 }
 
 .sobrelogo {
-    width: 250px;
+    width: 200px;
     margin: auto;
     display: block;
+}
+.sobre ul li img{
+    width: 250px;
+    height: 250px;
 }
 
 .sobreimg1 {
@@ -146,7 +236,8 @@ footer a:hover {
 }
 
 .especialistas {
-    font-size: 2em;
+    font-size: 1.8em;
+    overflow-y: hidden;
 }
 
 .instagram {
@@ -164,19 +255,74 @@ width: 600px ;
 height:400px ;
 }
 
-#counter{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
+.fotosgaleria{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fotos img{
+    height: 900px;
+    width: 500px;
+} 
+.fotosfinal{
+    background-color: white;
+    height: 100%;
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Ageo Personal Use', sans-serif;
+
+}
+
+.politic{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.politic a{
+    color: rgb(68, 68, 68);
+}
+.politic a:hover{
+    color: blue;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
     .disableimg{
         display: none;
     }
+    .capa {
+        font-size: 20px;
+    }
+    .capa img{
+        width: 300px;
+    }
+    .sobre{
+        font-size: 20px;
+    }
+    .sobre p{
+        padding: 0px 10px ;
+    }
+    .maps{
+        width: 300px;
+        height: 200px;
+    }
+    .contato{
+        font-size: 20px;
+    }
+    .fotos img{
+        height: auto;
+        width: auto;
+    } 
+    .fotosh{
+        display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-
+.fotos img{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
