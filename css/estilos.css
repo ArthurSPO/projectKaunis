@@ -103,6 +103,7 @@
 }
 
 .fundo {
+    position: relative;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -112,18 +113,20 @@
 
 .fundodark {
     background-color: #1f1f1f;
+    font-size: 24px;
+    text-align: justify;
 }
 
 #imgfundo1 {
-    background-image: url(../img/newpcp.jpg);
+    background-image: url(../img/pcp.jpg);
 }
 
 #imgfundo2 {
-    background-image: url(../img/afundo.jpg);
+    background-image: url(../img/newafundo.jpg);
 }
 
 #imgfundo3 {
-    background-image: url(../img/cfundo.jpg);
+    background-image: url(../img/newcfundo.jpg);
 }
 
 #navbarSupportedContent {
@@ -313,6 +316,12 @@ height:400px ;
     } 
     .fotosh{
         display: none;
+    }
+    .fundo{
+        background-attachment: scroll;
+    }
+    .tela1, .tela2{
+        margin: 0px;
     }
 }
 
