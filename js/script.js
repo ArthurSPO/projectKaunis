@@ -16,7 +16,7 @@ const checkCookie = () => {
   //Read the cookie and split on "="
   let input = document.cookie.split("=");
   //Check for our cookie
-  if (input[0] == "myCookieName") {
+  if (input[0] == "kaunisCookie") {
     //Hide the popup
     popUp.classList.add("hide");
     popUp.classList.remove("show");
